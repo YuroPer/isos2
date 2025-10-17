@@ -1,7 +1,8 @@
 pages:
   stage: deploy
   script:
-    - cp -r * public  # copiar todo a la carpeta public existente
+    # Copia todo excepto la carpeta public
+    - rsync -av --exclude=public ./ public/
   artifacts:
     paths:
       - public
