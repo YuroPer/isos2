@@ -43,10 +43,10 @@ body {
 .principal-section {
     display: flex;
     justify-content: space-around;
+    height: 80vh;
 }
 
 .principal-section-title {
-    padding: 25px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -125,11 +125,53 @@ body {
     border-color: #a210ce;
 }
 
+/* Servicios */
+
+.servicios>h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 50px 0;
+    margin: 0;
+
+}
+
+.servicios-item {
+    text-align: center;
+    display: flex;
+
+    margin: 20px 0;
+    justify-content: space-around;
+    align-items: center;
+
+    border-top: 3px dashed #870eac;
+    border-bottom: 3px dashed #870eac;
+}
+
+.servicios-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.servicios-item h3 {
+    font-size: 1.7rem;
+}
+
+.servicios-item p {
+    font-size: 1.2rem;
+}
+
+.servicios-item img {
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+
 /* Footer */
 
 .footer-end {
-    background-color: #2a044d;
-    color: #aaa;
+    background-color: #181818;
+    color: #cecece;
     padding: 15px 0;
     margin-top: 30px;
 }
@@ -137,21 +179,30 @@ body {
 .footer-principal {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .footer-principal div {
     flex: 0 1 200px;
 }
 
-.footer-end > p {
-    text-align: center;
+.footer-principal ul {
+    padding: 0;
+    list-style: none;
 }
 
-/* Servicios */
+.footer-principal a {
+    text-decoration: none;
+    color: #cecece;
+}
 
-.servicios {
-    padding: 50px 0;
+.footer-principal a:hover {
+    color: #804c96;
+}
+
+.footer-end>p {
     text-align: center;
+    padding: 0 10px;
 }
 
 /* Media Queries */
@@ -206,6 +257,7 @@ body {
     .principal-section {
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
 
     .principal-section-image {
@@ -215,5 +267,20 @@ body {
     /* Seccion Ventajas */
     .ventajas-article article {
         margin-bottom: 20px;
+    }
+
+    /* Servicios */
+
+    .servicios-item h3 {
+        font-size: 1.4rem;
+    }
+
+    .servicios-item p {
+        font-size: 1.0rem;
+    }
+
+    .servicios-item img {
+        width: 150px;
+        height: 150px;
     }
 }
