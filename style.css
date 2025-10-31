@@ -206,6 +206,71 @@ body {
     /* border: 100px solid; */
 }
 
+/* Licencias (windows.html) */
+/* LICENCIAS */
+.licencias-hero {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: #7baf9f;
+    color: #fff;
+}
+
+.licencias-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.licencias-hero p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* GRID DE LICENCIAS */
+.licencias-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 5%;
+}
+
+.licencia-card {
+    flex: 1 1 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.licencia-card:hover {
+    transform: translateY(-5px);
+}
+
+.licencia-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.licencia-card p {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.licencia-card .precio {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.licencia-card .button {
+    display: inline-block;
+}
+
+
 /* Media Queries */
 
 @media screen and (max-width: 900px) {
